@@ -1,12 +1,21 @@
 <h2>Create Posts</h2>
 
-  
-  <mat-form-field>
-    <mat-label>Commentaire</mat-label>
-    <textarea matInput  [(ngModel)] ='ValeurEntrer'></textarea>
-    
-  </mat-form-field>
-  <button mat-button (click)="AffichePost()">Poster</button>
-<p>
-    Votre post est  : {{Valaff}}
-</p>
+
+<mat-card appearance="outlined">
+    <mat-card-content>
+
+        <mat-form-field>
+            <mat-label>Commentaire</mat-label>
+            <textarea matInput  [(ngModel)] ='ValeurEntrer'></textarea>
+            
+          </mat-form-field>
+          <button mat-flat-button  (click)="AffichePost()" >Poster</button>
+        <p>
+            Votre post est  : {{Valaff}}
+        </p>
+        
+    </mat-card-content>
+</mat-card>
+
+
+
