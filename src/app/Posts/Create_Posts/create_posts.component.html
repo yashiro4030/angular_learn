@@ -1,4 +1,12 @@
 <h2>Create Posts</h2>
-<textarea   rows="6" [(ngModel)] = 'EntrerdValue'></textarea>
-<button (click)="onAddPost()">Poster</button>
-<p>{{NewPosts}}</p>
+
+  
+  <mat-form-field>
+    <mat-label>Commentaire</mat-label>
+    <textarea matInput  [(ngModel)] ='ValeurEntrer'></textarea>
+    
+  </mat-form-field>
+  <button mat-button (click)="AffichePost()">Poster</button>
+<p>
+    Votre post est  : {{Valaff}}
+</p>

@@ -9,13 +9,12 @@ import { Component } from "@angular/core";
 })
 export class CreatePostComponent{
 
-    NewPosts = 'No content'
-     text = ''
-     EntrerdValue = ''
-    onAddPost(){
 
-        this.NewPosts =this.EntrerdValue
-    
+    ValeurEntrer =''
+    Valaff=''
+    AffichePost(){
+
+     this.Valaff = this.ValeurEntrer
+
     }
-
 }
